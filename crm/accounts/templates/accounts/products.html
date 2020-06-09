@@ -12,6 +12,15 @@
           <th>Category</th>
           <th>Price</th>
         </tr>
+
+        <!-- query the database and loop the result -->
+        {% for i in products %}
+        <tr>
+          <td>{{i.name}}</td>
+          <td>{{i.category}}</td>
+          <td><strong>PhP</strong> {{i.price}}</td>
+        </tr>
+        {% endfor %}
       </table>
     </div>
   </div>
